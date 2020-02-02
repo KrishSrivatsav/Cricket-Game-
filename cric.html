@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>cri</title>
+</head>
+<body>
+    <div id="ipl">
+
+    </div>
+    <script>
+        var team1 = JSON.parse(localStorage.getItem("cricket"));
+        var team2 = JSON.parse(localStorage.getItem("match"));
+        // var plr1=JSON.parse(localStorage.getItem("playersScore1"));
+        console.log(team1.playersScore);
+        var indv1=[]
+        console.log(indv1)
+        // var i1 = Math.max(indv1)
+        
+        
+        
+        team1.playersScore.forEach(element => {
+            element=element.map((el)=>{
+                return parseInt(el)
+            })
+            indv1.push(element.reduce((acc,pres)=>{
+                return acc+pres
+            },0))
+        });
+        
+        var i1 = indv1.indexOf(Math.max(...indv1));
+        
+        console.log(i1+1);
+        console.log('player');
+
+
+        console.log(team2.playersScore2);
+        var indv2=[]
+        console.log(indv2)
+        // var i1 = Math.max(indv1)
+        
+        
+        
+        team2.playersScore2.forEach(element => {
+            element=element.map((el)=>{
+                return parseInt(el)
+            })
+            indv2.push(element.reduce((acc,pres)=>{
+                return acc+pres
+            },0))
+        });
+        
+        var i2 = indv2.indexOf(Math.max(...indv2));
+        
+        console.log(i2+1);
+        console.log('player');
+
+
+
+
+        if(team1.totalscoreTeam1 > team2.totalscoreTeam2){
+            document.getElementById("ipl").innerHTML = "<h1>Yellow wins</h1>";
+        }
+        else { 
+            document.getElementById("ipl").innerHTML = "<h1>Blue wins</h1>";
+
+        }
+    </script>
+</body>
+</html>

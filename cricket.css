@@ -1,0 +1,27 @@
+body{
+    background-color: black !important;
+    height: auto;
+    width: auto;
+}
+.cont{
+    background-color: lightgreen;
+    height: auto;
+    width: auto;
+}
+.a{
+    padding-top: 100px;
+    
+}
+.b{
+    padding-top: 100px;
+}
+.c{
+    padding-top: 100px;
+    text-align: center;
+}
+#yellow{
+    color:darkgoldenrod;
+}
+#blue{
+    color: blue;
+}

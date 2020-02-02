@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="cricket.css">
+    <link rel="stylesheet" href="./bootstrap.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Cricket </title>
+</head>
+
+<body>
+    <script src="cricket.js">  </script>
+    <div class="container cont">
+        <div class="row">
+            <div class="col-xl-12">
+                <h1 style="text-align: center; font-size: 50px; "> EPL </h1>
+                <p style="text-align: center; font-size: 50px;font-size: 50px;"> Hurricanes vs Hurricanes </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-6 a">
+                <div class="card text-center bg-warning mb-3">
+                    <div class="card-header">
+                        <h1>Team 1</h1>
+                    </div>
+                    <div class="card-body" id="first">
+
+                        <!-- <p style="padding-top: 25;"id="team1">Score1 :</p> -->
+
+                        <h5 class="card-title"> Bulls </h5>
+                        Player 1 : <input type="text" name="one" id="player10" value=""> <br>
+                        <h5 class="card-title"> Bulls </h5>
+                        Player 2 : <input type="text" name="two" id="player9" value=""> <br>
+
+                        <h5 class="card-title"> Bulls </h5>
+                        Player 3 : <input type="text" name="three" id="player8" value=""> <br>
+
+                        <h5 class="card-title"> Bulls </h5>
+                        Player 4 : <input type="text" name="four" id="player7" value=""> <br>
+
+                        <h5 class="card-title"> Bulls </h5>
+                        Player 5 : <input type="text" name="five" id="player6" value=""> <br>
+
+                        <h5 class="card-title"> Bulls </h5>
+                        Player 6 : <input type="text" name="six" id="player5" value=""> <br>
+
+                        <h5 class="card-title"> Bulls </h5>
+                        Player 7 :<input type="text" name="sev" id="player4" value=""> <br>
+
+                        <h5 class="card-title"> Bulls </h5>
+                        Player 8 :<input type="text" name="eight" id="player3" value=""> <br>
+
+                        <h5 class="card-title"> Bulls </h5>
+                        Player 9 : <input type="text" name="nine" id="player2" value=""> <br>
+
+                        <h5 class="card-title"> Bulls </h5>
+                        Player 10 : <input type="text" name="ten" id="player1" value=""> <br> <br>
+
+                        Score 1 :<input style="width: 150px; height: 150px;" disabled type="text" name="Score1 "
+                            id="team1" value=""> <br> <br>
+                        <button onclick="Team1()" id="t11" style="padding-top: 25;" href="#" class="btn btn-primary"> Bat
+                        </button>
+                    </div>
+                    <div class="card-footer text-muted">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 b">
+                <div class="card text-center bg-info mb-3">
+                    <div class="card-header">
+                        <h1>Team 2</h1>
+                    </div>
+                    <div class="card-body"id="second">
+                        <!-- <p style="padding-top: 25;"id="team2">Score2 :</p>  -->
+
+                        <h5 class="card-title"> Hurricanes </h5>
+                        Player 1 : <input type="text" name="1" id="play10" value=""> <br>
+                        <h5 class="card-title"> Hurricanes </h5>
+                        Player 2 : <input type="text" name="2" id="play9" value=""> <br>
+
+                        <h5 class="card-title"> Hurricanes </h5>
+                        Player 3 : <input type="text" name="3" id="play8" value=""> <br>
+
+                        <h5 class="card-title"> Hurricanes </h5>
+                        Player 4 : <input type="text" name="4" id="play7" value=""> <br>
+
+                        <h5 class="card-title"> Hurricanes </h5>
+                        Player 5 : <input type="text" name="5" id="play6" value=""> <br>
+
+                        <h5 class="card-title"> Hurricanes </h5>
+                        Player 6 : <input type="text" name="6" id="play5" value=""> <br>
+
+                        <h5 class="card-title"> Hurricanes </h5>
+                        Player 7 :<input type="text" name="7" id="play4" value=""> <br>
+
+                        <h5 class="card-title"> Hurricanes </h5>
+                        Player 8 :<input type="text" name="8" id="play3" value=""> <br>
+
+                        <h5 class="card-title"> Hurricanes </h5>
+                        Player 9 : <input type="text" name="9" id="play2" value=""> <br>
+
+                        <h5 class="card-title"> Hurricanes </h5>
+                        Player 10 : <input type="text" name="10" id="play1" value=""> <br> <br>
+
+                        Score2 : <input style="width: 150px; height: 150px;" type="text" disabled type="text"
+                            name="Score2 " id="team2" value=""> <br> <br>
+                        <button onclick="Team2()" id="t22" style="padding-top: 25;" href="#" class="btn btn-primary"> Bat
+                        </button>
+                    </div>
+                    <div class="card-footer text-muted">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-xl-12 c">
+                <button class="btn btn-outline-danger" onclick="result()"> Result </button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
